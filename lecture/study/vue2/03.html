@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>v-bind 디렉티브</h1>
+      <article hidden>
+        <h2>1. 기본 속성 바인딩</h2>
+        <img :src="imageUrl" :alt="message" />
+      </article>
+      <article hidden>
+        <h2>2.링크 주소 바인딩</h2>
+        <a :href="url" target="_blank">네이버이동</a>
+      </article>
+      <article hidden>
+        <h2>3. 클래스와 스타일 바인딩 (배열)</h2>
+        <div :class="[activeClass, errClass]">내용</div>
+        <div :class="[isActive ? activeClass: '', errClass]">내용2</div>
+      </article>
+      <article hidden>
+        <h2>4. 인라인 스타일 바인딩</h2>
+        <div style="color: tomato; font-size: 20px">내용4</div>
+        <div :style="{color: color1, fontSize}">내용4</div>
+      </article>
+      <article hidden>
+        <h2>5. 폼 요소의 속성 바인딩</h2>
+        <input
+          :type="inputType"
+          :placeholder="placeholderText"
+          :required="isRequired"
+        />
+      </article>
+      <article>
+        <h2>select 요소의 바인딩</h2>
+        <select value="selected">
+          <option
+            v-for="(option, i) in options"
+            :value="option.value"
+            :key="option.id"
+          >
+            {{option.text}}
+          </option>
+        </select>
+      </article>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp } = Vue;
+
+      let vm = createApp({
+        name: 'App',
+        data() {
+          return {
+            message: 'Hello Vue!',
+            // 속성바인딩
+            imageUrl: 'https://picsum.photos/100/100',
+            // 링크주소 바인딩
+            url: 'http://naver.com',
+            // 클래스 바인딩
+            isActive: false,
+            activeClass: 'active',
+            errClass: 'text-danger',
+            // 인라인 스타일 바인딩
+            color1: 'blue',
+            fontSize: '30px',
+            // 폼요소 속성 바인딩
+            inputType: 'text',
+            placeholderText: '이름을 입력하세요',
+            isInputDisable: false,
+            isRequired: false,
+            // select 요소 바인딩
+            selected: 'text1',
+            options: [
+              { id: 1, value: 'text1', text: '텍스트1' },
+              { id: 2, value: 'text2', text: '텍스트2' },
+              { id: 3, value: 'text3', text: '텍스트3' },
+            ],
+          };
+        },
+      });
+      vm.mount('#app');
+    </script>
+  </body>
+</html>
