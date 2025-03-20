@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>기본 디렉티브 - v-text</h1>
+      <p v-text="text1"></p>
+      <p>{{message}}</p>
+      <hr />
+      <button v-text="isLoading ? '로딩중':'제출'"></button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp } = Vue;
+
+      let vm = createApp({
+        name: 'App',
+        data() {
+          return {
+            message: '텍스트',
+            text1: '사용자',
+            isLoading: false,
+          };
+        },
+      });
+      vm.mount('#app');
+    </script>
+  </body>
+</html>

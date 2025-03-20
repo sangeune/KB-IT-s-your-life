@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <!-- Header 영역 -->
+    <header class="header">
+      <h1 class="logo">
+        <a href="https://www.yes24.com/Main/default.aspx"
+          ><img
+            src="https://image.yes24.com/sysimage/renew/sLayout/logo_n.png"
+            alt="로고"
+        /></a>
+      </h1>
+      <span class="login_header">로그인</span>
+      <span class="join_header">회원가입</span>
+    </header>
+    <!-- Content 영역 -->
+    <div class="content">
+      <div class="login_wrap">
+        <!-- 로그인 영역 -->
+        <div class="login_area">
+          <!-- 회원/비회원 탭 영역 -->
+          <div id="member_tab">
+            <ul id="ul_member_tab">
+              <li id="member">회원</li>
+              <li id="nomember">비회원 주문확인</li>
+            </ul>
+          </div>
+          <!-- 로그인 폼 : 회원 영역 -->
+          <div id="member_login">
+            <fieldset class="login_form">
+              <span id="member_ID">아이디</span>
+              <span id="member_PW">비밀번호</span>
+              <div class="login_check">
+                <span class="check">로그인 상태 유지</span>
+                <span class="check">아이디 저장</span>
+              </div>
+              <button type="button" id="btn_login">로그인</button>
+            </fieldset>
+            <!-- 아이디/비밀번호 찾기 -->
+            <div class="login_find">
+              <a href="#">아이디 찾기</a>
+              <em>|</em>
+              <a href="#">비밀번호 찾기</a>
+            </div>
+            <!-- 소셜 로그인 영역 -->
+            <ul class="social_login">
+              <li>네이버 아이디로 로그인</li>
+              <li>카카오 아이디로 로그인</li>
+              <li>페이스북 아이디로 로그인</li>
+              <li>모바일 간편 로그인</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 로그인 광고 영역 -->
+        <div class="login_ad">
+          <div class="ad_big">
+            <img
+              src="https://image.yes24.com/images/00_Event/2024/0617Gift/bn_1080x1080.jpg"
+              alt="큰 광고"
+            />
+          </div>
+          <div class="ad_small">
+            <img
+              src="http://adgirl.yes24.com/RealMedia/ads/Creatives/OasDefault/Login_Bottom/login_51395.jpg"
+              alt="작은 광고"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 광고 배너 영역 -->
+    <div class="banner">
+      <a href="#"
+        ><img
+          src="https://image.yes24.com/dms/202410/bn_login_n_960x60.gif"
+          alt="광고 배너"
+      /></a>
+    </div>
+    <!-- footer 영역 -->
+    <footer class="footer">
+      <div>footer</div>
+    </footer>
+  </body>
+</html>

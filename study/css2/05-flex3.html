@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05-flex3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .sec {
+        border: 1px solid lightgray;
+        padding: 0.5rem;
+      }
+      .sec > div {
+        border: 1px solid lightblue;
+        width: 100px;
+      }
+      .sec {
+        width: 500px;
+        height: 500px;
+        display: flex;
+      }
+      /* .sec > div {
+        flex-grow: 1;
+      } */
+      div.box1 {
+        /* width: calc(100% / 3); */
+        /* flex-grow: 1; */
+        /* flex-basis: 200px; */
+        background-color: lightblue;
+        flex: 1;
+        order: 1;
+      }
+      div.box2 {
+        flex-grow: 2;
+        order: -1;
+      }
+      div.box3 {
+        flex-grow: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>05-flex</h1>
+    <section class="sec">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+    </section>
+  </body>
+</html>

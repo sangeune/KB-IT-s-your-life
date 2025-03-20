@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>note_logic</title>
+    <script>
+      let date = new Date();
+      let month = date.getMonth() + 1;
+      let season;
+
+      switch (true) {
+        case month >= 3 && month <= 5:
+          season = "봄";
+          break;
+        case month >= 6 && month <= 8:
+          season = "여름";
+          break;
+        case month >= 9 && month <= 11:
+          season = "가을";
+          break;
+        case month == 12 || month <= 2:
+          season = "겨울";
+          break;
+      }
+
+      alert(`${season} 입니다.`);
+
+      // if (3 <= month && month <= 5) {
+      //   alert("봄입니다.");
+      // } else if (6 <= month && month <= 8) {
+      //   alert("여름입니다.");
+      // } else if (9 <= month && month <= 11) {
+      //   alert("가을입니다.");
+      // } else {
+      //   alert("겨울입니다.");
+      // }
+    </script>
+  </head>
+  <body></body>
+</html>

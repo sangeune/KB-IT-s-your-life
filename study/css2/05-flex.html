@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05-flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .sec {
+        border: 1px solid lightgray;
+        padding: 0.5rem;
+      }
+      .sec > div {
+        border: 1px solid lightblue;
+        width: 100px;
+      }
+      .sec {
+        width: 500px;
+        height: 200px;
+        display: flex;
+        /* align-items: start; */
+        /* align-items: end; */
+        align-items: center;
+        justify-content: center;
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        /* flex-direction: column; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>05-flex</h1>
+    <section class="sec">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+      <!-- <div class="box4">box4</div>
+      <div class="box5">box5</div>
+      <div class="box6">box6</div>
+      <div class="box7">box7</div>
+      <div class="box8">box8</div>
+      <div class="box9">box9</div> -->
+    </section>
+  </body>
+</html>

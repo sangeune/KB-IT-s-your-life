@@ -1,0 +1,19 @@
+{
+	"HTML 기본 템플릿": {
+	  "prefix": "!!",
+	  "body": [
+		"<!DOCTYPE html>",
+		"<html lang=\"ko\">",
+		"<head>",
+		"    <meta charset=\"UTF-8\">",
+		"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+		"    <title>${TM_FILENAME_BASE}</title>",
+		"</head>",
+		"<body>",
+		"            <h1>${TM_FILENAME_BASE}</h1>$0",
+		"</body>",
+		"</html>"
+	  ],
+	  "description": "HTML 기본 템플릿 - 한국어"
+	}
+  }

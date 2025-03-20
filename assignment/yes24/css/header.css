@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  height: 100px;
+  margin: auto;
+}
+
+.login {
+  font-size: 24px;
+}
+
+.join {
+  font-size: 13px;
+  border: 1px solid lightgray;
+  padding: 10px;
+}

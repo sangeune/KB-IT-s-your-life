@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+    <style>
+      .modal {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .modal > div {
+        background-color: white;
+        width: 50%;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>v-show</h1>
+      <article>
+        <h2>1. 모달 및 팝업 표시 제어</h2>
+        <button @click=" isModal = true">열기</button>
+        <div class="modal" v-show="isModal">
+          <div>
+            <div class="con">실제 보여지는 부분</div>
+            <button @click="isModal = false">닫기</button>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>탭 인터페이스 구현</h2>
+        <div class="tab-headers">
+          <button v-for="(tab, i) in tabs" :key="tab.id" @click="activeTab = i">
+            {{tab.id}} / {{tab.title}}
+          </button>
+        </div>
+        <div class="tab-contents">
+          <div v-for="(tab, i) in tabs" :key="tab.id" v-show="activeTab === i">
+            {{tab.content}}
+          </div>
+        </div>
+      </article>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp } = Vue;
+
+      let vm = createApp({
+        name: 'App',
+        data() {
+          return {
+            // 모달
+            isModal: false,
+            // tab 메뉴
+            activeTab: 0,
+            tabs: [
+              { id: 'id1', title: '버튼1', content: '1내용이들어갑니다.' },
+              { id: 'id2', title: '버튼2', content: '2내용이들어갑니다.' },
+              { id: 'id3', title: '버튼3', content: '3내용이들어갑니다.' },
+            ],
+          };
+        },
+      });
+      vm.mount('#app');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+  </head>
+  <body>
+    <h1>card</h1>
+    <style>
+      .card {
+        /* border: 1px solid red; */
+        width: 300px;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 100px;
+        transition: 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      .card > * {
+        border: 1px solid lavender;
+      }
+      .card img {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .card .img {
+        padding-top: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      .card .place {
+      }
+      .card .price {
+      }
+      .card .info {
+      }
+    </style>
+    <div class="card">
+      <p class="img">
+        <img src="./img/Rectangle14.jpg" alt="여행지" />
+      </p>
+      <p class="place">여행지</p>
+      <p class="price">가격</p>
+      <p class="info">정보</p>
+    </div>
+  </body>
+</html>

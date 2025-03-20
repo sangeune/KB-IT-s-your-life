@@ -1,0 +1,110 @@
+.content {
+  display: block;
+  background-color: #fff;
+  border: solid 1px #d8d8d8;
+  text-align: center;
+  width: 958px;
+  padding: 60px;
+  margin: auto;
+}
+
+.login_wrap {
+  display: block;
+  position: relative;
+  width: 760px;
+  text-align: left;
+  margin: auto;
+  overflow: hidden;
+}
+
+.login_area {
+  display: block;
+  position: relative;
+  width: 360px;
+  float: left;
+  text-align: left;
+}
+
+#member_tab {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#member,
+#nomember {
+  display: table-cell;
+  width: 50%;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: solid 1px #d8d8d8;
+  font-size: 13px;
+}
+
+#member_ID {
+  display: block;
+  padding: 9px 14px 11px;
+  width: auto;
+  height: 50px;
+  box-sizing: border-box;
+  border-color: #d8d8d8;
+  border-radius: 3px;
+}
+
+#nomember_ID {
+  display: block;
+  padding: 9px 14px 11px;
+  width: auto;
+  height: 50px;
+  box-sizing: border-box;
+  border-color: #d8d8d8;
+  border-radius: 3px;
+}
+
+.login_check {
+  margin-top: 20px;
+}
+
+#btn_login {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 28px;
+  padding: 15px 0px;
+  text-align: center;
+  background-color: #0080ff;
+  border: solid 1px #ebebeb;
+  font-size: 20px;
+}
+
+.login_ad {
+  float: right;
+  width: 360px;
+}
+
+.ad_big {
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+}
+
+.ad_big img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ad_small {
+  margin-top: 10px;
+  width: 360px;
+  height: 140px;
+  overflow: hidden;
+}
+
+.banner {
+  width: 960px;
+  height: 100px;
+  margin: auto;
+  margin-top: 20px;
+}

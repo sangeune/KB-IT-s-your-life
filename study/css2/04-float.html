@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-float</title>
+  </head>
+  <body>
+    <h1>04-float</h1>
+
+    <style>
+      h1 {
+        text-shadow: -5px 5px 5px rgba(90, 53, 53, 0.332),
+          -5px -5px 5px rgba(43, 52, 239, 0.658);
+        background: rgb(131, 58, 180);
+        background: linear-gradient(
+          90deg,
+          rgba(131, 58, 180, 1) 0%,
+          rgba(253, 29, 29, 1) 50%,
+          rgba(252, 176, 69, 1) 100%
+        );
+      }
+      div {
+        border: 1px solid red;
+        float: right;
+        /* display: inline; */
+        background-color: lightgrey;
+        box-shadow: 10px 10px 10px red;
+      }
+      .sec0 {
+        /* overflow: hidden; */
+      }
+      /* .sec {
+        clear: both;
+      } */
+    </style>
+    <section class="sec0">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+    </section>
+    <section class="sec">요소추가</section>
+  </body>
+</html>

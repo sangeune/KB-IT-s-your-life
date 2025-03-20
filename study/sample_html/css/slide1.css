@@ -1,0 +1,57 @@
+.sec2 {
+  position: relative;
+}
+.slide1 {
+  /* border: 10px solid red; */
+  padding: 20px 0;
+}
+
+.slide1 > ul {
+  /* border: 5px solid lightblue; */
+}
+.slide1 > ul > * {
+  /* border: 1px solid rebeccapurple; */
+}
+.next1 {
+  right: -10px;
+}
+.prev1 {
+  left: -10px;
+}
+.sec2 .pg1 {
+  top: auto;
+  bottom: -30px;
+}
+
+.card {
+  /* border: 1px solid red; */
+  /* width: 300px; */
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* margin: 100px; */
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card > * {
+  /* border: 1px solid lavender; */
+}
+.card img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card .img {
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.card .place {
+}
+.card .price {
+}
+.card .info {
+}

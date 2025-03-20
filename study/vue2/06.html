@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>로그인폼</h1>
+      <form @submit.prevent="login">
+        <label for="username">사용자명 </label>
+        <input
+          id="username"
+          type="text"
+          required
+          v-model="loginForm.userName"
+        /><br />
+        <label for="password">비밀번호 </label>
+        <input
+          id="password"
+          type="password"
+          required
+          v-model="loginForm.password"
+        /><br />
+        <label for="remember">로그인상태 : </label>
+        <input type="checkbox" id="remember" v-model="loginForm.remember" />
+        <br />
+        <button type="submit">로그인</button>
+      </form>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp } = Vue;
+
+      let vm = createApp({
+        name: 'App',
+        data() {
+          return {
+            loginForm: {
+              userName: '',
+              password: '',
+              remember: false,
+            },
+          };
+        },
+        methods: {
+          login() {
+            console.log('실행');
+          },
+        },
+      });
+      vm.mount('#app');
+    </script>
+  </body>
+</html>

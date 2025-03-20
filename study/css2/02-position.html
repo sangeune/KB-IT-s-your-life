@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-position</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .sec1,
+      .sec1 > div {
+        padding: 1rem;
+        border: 1px solid lightgray;
+      }
+      /* .sec1 > div {
+        width: 100px;
+        height: 100px;
+      } */
+      .sec1 {
+        position: relative;
+      }
+      .box1 {
+        position: static;
+      }
+      .box2 {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        /* right: 0; */
+        /* bottom: 0; */
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        z-index: 200;
+      }
+      .box3 {
+        background-color: lightcoral;
+        position: relative;
+        top: 50px;
+        /* right: 50px; */
+        left: 50px;
+        /* bottom: 50px; */
+        z-index: 100;
+      }
+      .box4 {
+        position: fixed;
+        background-color: aquamarine;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99999;
+        display: none;
+        /* opacity: 0.5; */
+      }
+      .box5 {
+        position: sticky;
+        top: 50px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>02-position</h1>
+    <section style="height: 50vh; background-color: aliceblue">
+      내용없음
+    </section>
+    <section class="sec1">
+      <div class="box1">static</div>
+      <div class="box2">absolute</div>
+      <div class="box3">relative</div>
+      <div class="box4">fixed</div>
+    </section>
+    <section style="height: 800px; background-color: rgb(57, 132, 198)">
+      <div class="box5">sticky</div>
+    </section>
+    <section style="height: 200vh">하단</section>
+  </body>
+</html>
