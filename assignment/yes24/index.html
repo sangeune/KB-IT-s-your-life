@@ -11,19 +11,24 @@
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
-    <!-- Header 영역 -->
+    <!-- Header 영역: 로고, 로그인 타이틀, 회원가입 링크 -->
     <header class="header">
       <h1 class="logo">
+        <!-- 로고 클릭 시 YES24 메인 페이지로 이동 -->
         <a href="https://www.yes24.com/Main/default.aspx"
-          ><img
-            src="https://image.yes24.com/sysimage/renew/sLayout/logo_n.png"
-            alt="로고"
+          ><img src="./assets/img/logo_n.png" alt="로고"
         /></a>
       </h1>
+      <!-- 로그인 타이틀 -->
       <span class="login_header">로그인</span>
-      <span class="join_header">회원가입</span>
+      <!-- 회원가입 링크 -->
+      <div class="join_header">
+        <a href="https://www.yes24.com/Member/Join/Accept.aspx">
+          <span class="join_wrap"> <em class="join_txt">회원가입</em></span>
+        </a>
+      </div>
     </header>
-    <!-- Content 영역 -->
+    <!-- Content 영역: 로그인 폼과 광고 -->
     <div class="content">
       <div class="login_wrap">
         <!-- 로그인 영역 -->
@@ -38,42 +43,74 @@
           <!-- 로그인 폼 : 회원 영역 -->
           <div id="member_login">
             <fieldset class="login_form">
-              <span id="member_ID">아이디</span>
-              <span id="member_PW">비밀번호</span>
+              <!-- 아이디 입력 -->
+              <span id="member_ID" class="member_ID_wrap">
+                <label for="member_ID">아이디</label>
+                <input id="member_ID" type="text" />
+              </span>
+              <!-- 비밀번호 입력 -->
+              <span id="member_PW" class="member_PW_wrap">
+                <label for="member_PW">비밀번호</label>
+                <input id="member_PW" type="password" />
+              </span>
+              <!-- 로그인 상태 유지와 아이디 저장 체크박스 -->
               <div class="login_check">
-                <span class="check">로그인 상태 유지</span>
-                <span class="check">아이디 저장</span>
+                <span class="check_wrap">
+                  <label for="check_auto_login">
+                    <input id="check_auto_login" type="checkbox" />
+                    <em class="check">로그인 상태 유지</em>
+                  </label>
+                  <label for="check_ID_save">
+                    <input id="check_ID_save" type="checkbox" />
+                    <em class="check">아이디 저장</em>
+                  </label>
+                </span>
               </div>
-              <button type="button" id="btn_login">로그인</button>
+              <!-- 로그인 버튼 -->
+              <button type="button" class="btn_login">로그인</button>
             </fieldset>
             <!-- 아이디/비밀번호 찾기 -->
-            <div class="login_find">
-              <a href="#">아이디 찾기</a>
-              <em>|</em>
-              <a href="#">비밀번호 찾기</a>
+            <div class="login_find_wrap">
+              <a href="#" class="login_find">아이디 찾기</a>
+              <em class="login_find">|</em>
+              <a href="#" class="login_find">비밀번호 찾기</a>
             </div>
-            <!-- 소셜 로그인 영역 -->
+            <!-- 소셜 로그인 영역: 네이버, 카카오, 페이스북, 모바일 -->
             <ul class="social_login">
-              <li>네이버 아이디로 로그인</li>
-              <li>카카오 아이디로 로그인</li>
-              <li>페이스북 아이디로 로그인</li>
-              <li>모바일 간편 로그인</li>
+              <li class="social_login_list">
+                <span class="social_login_wrap">
+                  <em class="icon_social icon_naver"></em>
+                  <em class="txt_social">네이버 아이디로 로그인</em>
+                </span>
+              </li>
+              <li class="social_login_list">
+                <span class="social_login_wrap">
+                  <em class="icon_social icon_kakao"></em>
+                  <em class="txt_social">카카오 아이디로 로그인</em>
+                </span>
+              </li>
+              <li class="social_login_list">
+                <span class="social_login_wrap">
+                  <em class="icon_social icon_face"></em>
+                  <em class="txt_social">페이스북 아이디로 로그인</em>
+                </span>
+              </li>
+              <li class="social_login_list">
+                <span class="social_login_wrap">
+                  <em class="icon_social icon_mobile"></em>
+                  <em class="txt_social">모바일 간편 로그인</em>
+                </span>
+              </li>
             </ul>
           </div>
         </div>
         <!-- 로그인 광고 영역 -->
         <div class="login_ad">
           <div class="ad_big">
-            <img
-              src="https://image.yes24.com/images/00_Event/2024/0617Gift/bn_1080x1080.jpg"
-              alt="큰 광고"
-            />
+            <img src="./assets/img/bn_1080x1080.jpg" alt="큰 광고" />
           </div>
           <div class="ad_small">
-            <img
-              src="http://adgirl.yes24.com/RealMedia/ads/Creatives/OasDefault/Login_Bottom/login_51395.jpg"
-              alt="작은 광고"
-            />
+            <img src="./assets/img/login_51395.jpg" alt="작은 광고" />
           </div>
         </div>
       </div>
@@ -81,12 +118,10 @@
     <!-- 광고 배너 영역 -->
     <div class="banner">
       <a href="#"
-        ><img
-          src="https://image.yes24.com/dms/202410/bn_login_n_960x60.gif"
-          alt="광고 배너"
+        ><img src="./assets/img/bn_login_n_960x60.gif" alt="광고 배너"
       /></a>
     </div>
-    <!-- footer 영역 -->
+    <!-- footer 영역: 저작권 정보 -->
     <footer class="footer">
       <address>
         "Copyright © "

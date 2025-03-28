@@ -1,3 +1,4 @@
+/* 메인 콘텐츠 영역 */
 .content {
   display: block;
   background-color: #fff;
@@ -5,9 +6,10 @@
   text-align: center;
   width: 958px;
   padding: 60px;
-  margin: auto;
+  margin: auto; /* 중앙 정렬 */
 }
 
+/* 로그인 영역 */
 .login_wrap {
   display: block;
   position: relative;
@@ -21,14 +23,19 @@
   display: block;
   position: relative;
   width: 360px;
-  float: left;
+  float: left; /* 좌측 배치 */
   text-align: left;
 }
 
+/* 회원 탭 */
 #member_tab {
-  display: block;
+  display: table;
   width: 100%;
   margin-bottom: 20px;
+}
+
+#ul_member_tab {
+  display: table-row;
 }
 
 #member,
@@ -42,31 +49,58 @@
   font-size: 13px;
 }
 
-#member_ID {
+/* 아이디, 비밀번호 입력 */
+.member_ID_wrap,
+.member_PW_wrap {
   display: block;
   padding: 9px 14px 11px;
   width: auto;
   height: 50px;
   box-sizing: border-box;
+  border: solid 1px #ebebeb;
   border-color: #d8d8d8;
   border-radius: 3px;
+  line-height: 28px;
+  position: relative;
 }
 
-#nomember_ID {
-  display: block;
-  padding: 9px 14px 11px;
-  width: auto;
-  height: 50px;
-  box-sizing: border-box;
-  border-color: #d8d8d8;
-  border-radius: 3px;
+.member_PW_wrap {
+  margin-top: 10px;
 }
 
+.member_ID_wrap label,
+.member_PW_wrap label {
+  position: absolute;
+  left: 14px;
+  top: 1px;
+  height: 45px;
+  line-height: 45px;
+  color: #999;
+}
+
+.member_ID_wrap input,
+.member_PW_wrap input {
+  height: 28px;
+  line-height: 27px;
+  width: 100%;
+  border: none;
+  border-color: transparent; /* 테두리 제거 */
+}
+
+/* 로그인 체크박스 */
 .login_check {
   margin-top: 20px;
+  font-size: 12px;
+  color: #555;
 }
 
-#btn_login {
+.check_auto_login {
+  margin-right: 11px;
+}
+
+/* 로그인 버튼 */
+.btn_login {
+  margin-top: 20px;
   display: block;
   width: 100%;
   height: 60px;
@@ -76,8 +110,72 @@
   background-color: #0080ff;
   border: solid 1px #ebebeb;
   font-size: 20px;
+  color: #fff;
 }
 
+/* 아이디/비밀번호 찾기 */
+.login_find_wrap {
+  margin-top: 11px;
+  padding-bottom: 12px;
+}
+
+.login_find {
+  font-size: 12px;
+  color: #666;
+}
+
+/* 소셜 로그인 영역 */
+.social_login {
+  padding-top: 15px;
+  text-align: left;
+}
+
+.social_login_list {
+  margin-top: 10px;
+}
+
+.social_login_wrap {
+  display: block;
+  height: 38px;
+  border: solid 1px #ebebeb;
+  border-right: solid 1px #d8d8d8;
+  border-bottom: solid 1px #d8d8d8;
+}
+
+.icon_social {
+  float: left;
+  width: 38px;
+  height: 38px;
+  border-right: solid 1px #e5e5e5;
+  background-image: url(../assets/img/bgC_member.png);
+}
+
+.icon_naver {
+  background-position: 0 -400px; /* 네이버 아이콘 */
+}
+
+.icon_kakao {
+  background-position: 0 -450px; /* 카카오 아이콘 */
+}
+
+.icon_face {
+  background-position: 0 -500px; /* 페이스북 아이콘 */
+}
+
+.icon_mobile {
+  background: url(../assets/img/ico_hp.svg); /* 모바일 아이콘 */
+}
+
+.txt_social {
+  display: block;
+  margin-left: 39px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 광고 영역 */
 .login_ad {
   float: right;
   width: 360px;
@@ -92,7 +190,7 @@
 .ad_big img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: contain; /* 비율 유지 */
 }
 
 .ad_small {
@@ -102,9 +200,9 @@
   overflow: hidden;
 }
 
+/* 배너 영역 */
 .banner {
   width: 960px;
-  height: 100px;
   margin: auto;
   margin-top: 20px;
 }

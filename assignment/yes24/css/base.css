@@ -1,3 +1,11 @@
+/* margin padding 기본값 제거, border-box 적용 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f8f8f8;
+  text-align: center;
 }

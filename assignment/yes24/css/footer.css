@@ -1,4 +1,21 @@
+/* 푸터 영역 */
 .footer {
   height: 50px;
   text-align: center;
+  font-size: 12px;
+}
+
+/* address 영역 */
+.footer address {
+  margin: 0 auto;
+  width: 960px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #666;
+}
+
+/* strong 요소 */
+strong {
+  font-weight: bold;
 }
