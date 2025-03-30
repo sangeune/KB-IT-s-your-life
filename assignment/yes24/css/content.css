@@ -49,6 +49,10 @@
   font-size: 13px;
 }
 
+.txt {
+  color: #69c;
+}
+
 /* 아이디, 비밀번호 입력 */
 .member_ID_wrap,
 .member_PW_wrap {
