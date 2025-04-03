@@ -1,0 +1,58 @@
+<!-- 항목 체크 시 해당 스타일 적용 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>06-08</title>
+    <style>
+      .bColor {
+        background-color: aqua;
+        color: black;
+      }
+      .bLayout {
+        text-align: center;
+        width: 120px;
+      }
+      .bBorder {
+        border: khaki dashed 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <p>
+        <!-- 체크박스 상태를 vue 데이터 객체(mystle)와 연결 -->
+        <input
+          type="checkbox"
+          v-model="mystyle.bColor"
+          value="true"
+        />색상<br />
+        <input
+          type="checkbox"
+          v-model="mystyle.bLayout"
+          value="true"
+        />정렬,크기<br />
+        <input
+          type="checkbox"
+          v-model="mystyle.bBorder"
+          value="true"
+        />테두리선<br />
+      </p>
+      <!-- mystyle 객체 사용 -->
+      <button :class="mystyle">버튼</button>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          // 스타일 객체 형태로 관리
+          return {
+            mystyle: { bColor: false, bLayout: false, bBorder: false },
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
+<!-- 이렇게 객체로 관리하는게 더 좋다. -->

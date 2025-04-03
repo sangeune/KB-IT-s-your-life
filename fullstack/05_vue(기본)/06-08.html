@@ -1,0 +1,50 @@
+<!-- 항목 체크 시 해당 스타일 적용 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>06-08</title>
+    <style>
+      .bColor {
+        background-color: aqua;
+        color: black;
+      }
+      .bLayout {
+        text-align: center;
+        width: 120px;
+      }
+      .bBorder {
+        border: khaki dashed 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <p>
+        <!-- 체크박스 상태를 vue 데이터와 연결 -->
+        <input type="checkbox" v-model="btnColor" value="true" />색상<br />
+        <input type="checkbox" v-model="btnAlign" value="true" />정렬,크기<br />
+        <input type="checkbox" v-model="btnBorder" value="true" />테두리선<br />
+      </p>
+      <!-- 체크박스가 true면 해당 클래스가 추가됨 -->
+      <button
+        :class="{ bColor: btnColor, bLayout: btnAlign, bBorder:btnBorder}"
+      >
+        버튼
+      </button>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            btnColor: false,
+            btnAlign: false,
+            btnBorder: false,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

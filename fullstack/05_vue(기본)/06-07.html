@@ -1,0 +1,50 @@
+<!-- 체크박스 체크했을 때 버튼 모양이 변경 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>06-07</title>
+    <style>
+      .buttonColor {
+        background-color: aqua;
+        color: black;
+      }
+      .buttonLayout {
+        text-align: center;
+        width: 120px;
+      }
+      .staticBorder {
+        border: khaki dashed 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 체크박스 클릭하면 isMyLayout 값이 변경됨 -->
+      <input type="checkbox" v-model="isMyLayout" />레이아웃 적용 여부<br />
+      <!-- 체크하면 isMyLayout이 true가 된다.
+       isMylayout이 true면 myLayout이 리턴된다. (buttonLayout) 
+       isMylayout이 false면 ''이 리턴된다. (빈 문자열->아무 클래스도 적용 안 됨)-->
+      <!-- myColor는 무조건 적용되는 클래스 -->
+      <button
+        class="staticBorder"
+        :class="[myColor, isMyLayout ? myLayout : '' ]"
+      >
+        버튼
+      </button>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            myColor: "buttonColor",
+            myLayout: "buttonLayout",
+            isMyLayout: false,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
