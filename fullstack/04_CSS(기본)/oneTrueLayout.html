@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oneTrueLayout</title>
+    <style>
+      body {
+        width: 500px;
+        margin: 10px auto;
+      }
+      #middle {
+        overflow: hidden;
+      }
+      #top {
+        background-color: green;
+      }
+      #left {
+        background-color: red;
+        float: left;
+        width: 150px;
+      }
+      #right {
+        background-color: blue;
+        float: right;
+        width: 350px;
+      }
+      #bottom {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac urna
+      vitae dolor pulvinar facilisis eget ac risus. Phasellus gravida non augue
+      vitae rutrum. Ut vitae ligula lorem. Suspendisse gravida egestas faucibus.
+    </div>
+    <div id="middle">
+      <div id="left">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
+      <div id="right">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac urna
+        vitae dolor pulvinar facilisis eget ac risus. Phasellus gravida non
+        augue vitae rutrum. Ut vitae ligula lorem. Suspendisse gravida egestas
+        faucibus.
+      </div>
+    </div>
+    <div id="bottom">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac urna
+      vitae dolor pulvinar facilisis eget ac risus. Phasellus gravida non augue
+      vitae rutrum. Ut vitae ligula lorem. Suspendisse gravida egestas faucibus.
+    </div>
+  </body>
+</html>
