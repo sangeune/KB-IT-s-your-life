@@ -16,33 +16,31 @@
     <script type="text/javascript" src="https://unpkg.com/vue"></script>
     <script type="text/javascript">
       var vm = Vue.createApp({
-        name: "App",
+        name: 'App',
         data() {
           return { amount: 0, balance: 0 };
         },
         methods: {
-          // 입금
           deposit() {
             let amt = parseInt(this.amount);
             if (amt <= 0) {
-              alert("0보다 큰 값을 예금해야 합니다");
+              alert('0보다 큰 값을 예금해야 합니다');
             } else {
               this.balance += amt;
             }
           },
-          // 인출
           withdraw() {
             let amt = parseInt(this.amount);
             if (amt <= 0) {
-              alert("0보다 큰 값을 인출할 수 있습니다");
+              alert('0보다 큰 값을 인출할 수 있습니다');
             } else if (amt > this.balance) {
-              alert("잔고보다 많은 금액을 인출할 수 없습니다");
+              alert('잔고보다 많은 금액을 인출할 수 없습니다');
             } else {
               this.balance -= amt;
             }
           },
         },
-      }).mount("#app");
+      }).mount('#app');
     </script>
   </body>
 </html>

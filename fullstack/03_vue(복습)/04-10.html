@@ -3,35 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>04-05</title>
+    <title>04-10</title>
   </head>
   <body>
     <div id="app">
       1보다 큰수 : <input id="a" type="text" v-model.number="num" />
       <br />
-      1부터 입력한 값까지의 합 : <span>{{sum()}}</span><br />
-      1부터 입력한 값까지의 합 : <span>{{sum()}}</span><br />
-      1부터 입력한 값까지의 합 : <span>{{sum()}}</span><br />
+      1부터 입력한 값까지의 합 : <span>{{sum}}</span><br />
+      1부터 입력한 값까지의 합 : <span>{{sum}}</span><br />
+      1부터 입력한 값까지의 합 : <span>{{sum}}</span><br />
     </div>
     <script type="text/javascript" src="https://unpkg.com/vue"></script>
     <script type="text/javascript">
       var vm = Vue.createApp({
-        name: "App",
+        name: 'App',
         data() {
           return { num: 0 };
         },
-        // 메서드
-        methods: {
+        created() {
+          console.log('## created');
+        },
+        mounted() {
+          console.log('## mounted');
+        },
+        updated() {
+          console.log('## updated');
+        },
+        computed: {
           sum() {
-            console.log("## num : " + this.num);
             var n = parseInt(this.num);
             if (Number.isNaN(n)) return 0;
             return (n * (n + 1)) / 2;
           },
         },
-      }).mount("#app");
+      }).mount('#app');
     </script>
   </body>
 </html>
-<!-- computed는 값이 같으면 여러 번 랜더링해도 sum() 함수가 한 번만 호출됨 -->
-<!-- methods는 렌더링할 때마다 호출됨 -->

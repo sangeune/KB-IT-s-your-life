@@ -1,5 +1,3 @@
-<!-- v-model 사용하면 한글 글자가 완성되어야 반영됨 -->
-<!-- 이벤트 처리로 해결 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +7,6 @@
   </head>
   <body>
     <div id="app">
-      <!-- 화살표 함수 -->
       <input
         id="a"
         type="text"
@@ -22,11 +19,11 @@
     <script type="text/javascript" src="https://unpkg.com/vue"></script>
     <script type="text/javascript">
       var vm = Vue.createApp({
-        name: "App",
+        name: 'App',
         data() {
-          return { name: "" };
+          return { name: '' };
         },
-      }).mount("#app");
+      }).mount('#app');
     </script>
   </body>
 </html>
