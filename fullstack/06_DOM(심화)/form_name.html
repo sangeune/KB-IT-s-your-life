@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form_name</title>
+    <!-- 폼 -->
+    <form>
+      <label for="name">이름:</label>
+      <input id="name" name="name" type="text" size="30" />
+      <input id="btn" type="button" value="전송" />
+    </form>
+    <script>
+      // 이벤트 연결
+      window.onload = function () {
+        // 변수 선언
+        let button = document.getElementById('btn');
+        let name = document.getElementById('name');
+        // 이벤트 연결 - 콘솔에 이름 출력
+        button.onclick = function () {
+          console.log(name.value); // name이 아니라 name.value로 해야 한다.
+        };
+      };
+    </script>
+  </head>
+  <body></body>
+</html>

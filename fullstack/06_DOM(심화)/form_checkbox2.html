@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form_checkbox</title>
+    <form>
+      <div>
+        좋아하는음식은?
+        <label><input type="checkbox" name="food" value="라면" /> 라면</label>
+        <label><input type="checkbox" name="food" value="만두" /> 만두</label>
+        <label
+          ><input type="checkbox" name="food" value="불고기" /> 불고기</label
+        >
+        <input id="btn" type="button" value="전송" />
+      </div>
+    </form>
+    <script>
+      // 이벤트 연결
+      window.onload = function () {
+        // 변수 선언
+        let checkbox = document.getElementsByName('food');
+        let button = document.getElementById('btn');
+
+        // 체크
+        checkbox.addEventListener('change', function () {
+          if (checkbox.checked) {
+            console.log('체크박스가 체크되었습니다.');
+          } else {
+            console.log('체크박스가 해제되었습니다.');
+          }
+        });
+        // 이벤트 연결 - 콘솔에 음식 출력
+        button.onclick = function () {
+          // for문을 쓰자!!
+          for (let i = 0; i < checkbox.length; i++) {
+            // 체크가 된 것만 출력하기
+            if (checkbox[i].checked == true) {
+              console.log(checkbox[i].value);
+            }
+          }
+        };
+      };
+    </script>
+  </head>
+  <body></body>
+</html>
