@@ -2,6 +2,8 @@
   <div class="row">
     <div class="col">
       <ul class="list-group">
+        <!-- v-for 사용 -->
+        <!-- 자식에게 받은 이벤트 부모에게 emit -->
         <TodoListItem
           v-for="todoItem in todoList"
           :key="todoItem.id"

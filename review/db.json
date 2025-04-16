@@ -1,0 +1,6 @@
+[
+  { "id": 1, "todo": "자전거 타기", "completed": false },
+  { "id": 2, "todo": "딸과 공원 산책", "completed": true },
+  { "id": 3, "todo": "일요일 애견 카페", "completed": false },
+  { "id": 4, "todo": "Vue 원고 집필", "completed": false }
+]
