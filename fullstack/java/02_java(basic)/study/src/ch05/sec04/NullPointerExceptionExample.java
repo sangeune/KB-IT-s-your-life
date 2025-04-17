@@ -9,3 +9,4 @@ public class NullPointerExceptionExample {
         System.out.println("총 문자 수: " + str.length() );
     }
 }
+//null인 상태에서 뭔가 하려고 하면 NullPointerException 발생
