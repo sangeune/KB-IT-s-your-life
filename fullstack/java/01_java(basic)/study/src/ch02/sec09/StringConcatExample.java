@@ -1,4 +1,4 @@
-package ch03.sec09;
+package ch02.sec09;
 
 public class StringConcatExample {
     public static void main(String[] args) {
@@ -19,3 +19,9 @@ public class StringConcatExample {
         System.out.println("result5: " + result5);
     }
 }
+
+//result1: 20
+//result2: 128
+//result3: 1028
+//result4: 1028
+//result5: 1010
