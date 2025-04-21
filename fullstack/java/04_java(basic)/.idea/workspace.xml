@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="517d3cec-948f-4cf1-9d31-bfef6e7d4bbf" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/01-font1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/02-position.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/03-position.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/04-float.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/05-flex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/05-flex2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/05-flex3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/06_layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/campaign_character.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/css2/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/node3/1node1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/node3/2node2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/node3/3node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/node3/4node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/node3/5node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/sample_html/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/sample_html/card.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/sample_html/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/sample_html/css/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/sample_html/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/sample_html/css/sec1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/sample_html/css/slide1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/sample_html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/vue2/01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/vue2/02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/vue2/03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/vue2/04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/vue2/05.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/vue2/06.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/vue2/07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/vue2/08.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2w1gwHa6z3GFPEx5gB9WoRuDAXw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="517d3cec-948f-4cf1-9d31-bfef6e7d4bbf" name="변경" comment="" />
+      <created>1745214731192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745214731192</updated>
+      <workItem from="1745214732800" duration="28000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
