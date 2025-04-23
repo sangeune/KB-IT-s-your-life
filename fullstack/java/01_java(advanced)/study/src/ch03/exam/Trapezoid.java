@@ -1,5 +1,5 @@
-package ch02.quiz;
-
+package ch03.exam;
+//5번
 public class Trapezoid {
     public static void main(String[] args) {
         int lengthTop = 5;

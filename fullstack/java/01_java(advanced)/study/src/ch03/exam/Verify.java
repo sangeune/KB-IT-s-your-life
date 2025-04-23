@@ -1,5 +1,5 @@
-package ch02.quiz;
-
+package ch03.exam;
+//6번
 public class Verify {
     public static void main(String[] args) {
         int x = 10;

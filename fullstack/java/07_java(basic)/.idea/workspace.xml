@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5001a3f-f819-42a1-bb1c-3f0297da8d64" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../02_java(advanced)/study/src/ch04/exam/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_java(advanced)/study/src/ch04/exam/FindSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_java(advanced)/study/src/ch04/exam/ForSum3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_java(advanced)/study/src/ch04/exam/Triangle1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_java(advanced)/study/src/ch04/exam/Triangle2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_java(advanced)/study/src/ch05/exam/ArrayLength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_java(advanced)/study/src/ch05/exam/ArrayMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_java(advanced)/study/src/ch05/exam/ArraySumAverage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_java(basic)/study/src/ch08/sec02/Audio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_java(basic)/study/src/ch08/sec02/RemoteControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_java(basic)/study/src/ch08/sec02/RemoteControlExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_java(basic)/study/src/ch08/sec02/Television.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_java(basic)/study/src/ch08/sec04/Audio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_java(basic)/study/src/ch08/sec04/RemoteControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_java(basic)/study/src/ch08/sec04/RemoteControlExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_java(basic)/study/src/ch08/sec04/Television.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/src/library/ExceptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/src/library/SmartPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/src/library/ThrowsExample1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_java(advanced)/study/src/ch02/quiz/Trapezoid.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01_java(advanced)/study/src/ch03/exam/Trapezoid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_java(advanced)/study/src/ch02/quiz/Verify.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01_java(advanced)/study/src/ch03/exam/Verify.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2w7FL9ZCgzvLvH1fYGW5jFdjiGl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="c5001a3f-f819-42a1-bb1c-3f0297da8d64" name="변경" comment="" />
+      <created>1745384650036</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745384650036</updated>
+      <workItem from="1745384653120" duration="24000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
