@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1e9dfd3e-3267-40ca-adbc-76e523887c47" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../03_java(advanced)/study/src/ch06/exam/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_java(advanced)/study/src/ch06/exam/DatabaseExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_java(advanced)/study/src/org/scoula/lib/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/lib/lombok.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/src/library/Bag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/src/library/BagTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/src/thread/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/src/thread/TCPClients.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/src/thread/TCPServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/src/thread/Thread1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/src/thread/Thread2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../study/java/study/src/thread/ThreadUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../study/java/study/study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../study/java/study/study.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2wA5p8HjMVXwlauUdZMaQQIW0dd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e9dfd3e-3267-40ca-adbc-76e523887c47" name="Changes" comment="" />
+      <created>1745471719677</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745471719677</updated>
+      <workItem from="1745471721969" duration="41000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
