@@ -19,9 +19,11 @@ public class Input {
     }
 
     //정수 입력
-    public int readInt(String title) {
+    public static int readInt(String title) {
         System.out.print(title);
-        return sc.nextInt();
+        int answer = sc.nextInt();
+        sc.nextLine(); //엔터 제거용
+        return answer;
     }
 
     //yes/no 확인
