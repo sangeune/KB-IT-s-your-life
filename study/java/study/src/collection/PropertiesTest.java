@@ -7,7 +7,7 @@ public class PropertiesTest {
         //Properties 컬렉션 생성
         Properties properties = new Properties();
         //PropertiesExample.class와 동일한 ClassPath에 있는 database.properties 파일 로드
-        properties.load(PropertiesTest.class.getResourceAsStream("database.properties"));
+//        properties.load(PropertiesTest.class.getResourceAsStream("database.properties"));
         //주어진 키에 대한 값 읽기
         String driver = properties.getProperty("driver");
         String url = properties.getProperty("url");
