@@ -8,4 +8,4 @@
 
 🛢️ [**04 MySQL 기반 RDBMS 활용과 JDBC**](./db) — 기본 ✅ / 심화 ⬜
 
-🍃 [**05 NoSQL 기반 MongoDB**](./db) — 기본 ⬜ / 심화 ⬜
+🍃 [**05 NoSQL 기반 MongoDB**](./db) — 기본 ✅ / 심화 ⬜
