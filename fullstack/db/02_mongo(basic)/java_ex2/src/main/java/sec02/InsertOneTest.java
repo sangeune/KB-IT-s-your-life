@@ -13,6 +13,7 @@ public class InsertOneTest {
         document.append("title", "MongoDB");
         document.append("desc", "MongoDB 공부하기");
         document.append("done", false);
+
         InsertOneResult result = collection.insertOne(document);
         System.out.println("==> InsertOneResult : " + result.getInsertedId());
         Database.close();
