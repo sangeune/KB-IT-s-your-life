@@ -11,7 +11,7 @@
 | 05   | 테이블, 뷰                                   |  ✅  |  ✅  |
 | 06   | 인덱스, 사용자 관리                          |  ✅  |  ✅  |
 | 07   | Java 연동 JDBC 프로그래밍                    |  ✅  |  ✅  |
-| 08   | Java 연동 JDBC 프로그래밍 - Travel 예제 실습 |      |      |
+| 08   | Java 연동 JDBC 프로그래밍 - Travel 예제 실습 |  ✅  |      |
 
 ### 02 NoSQL 기반 MongoDB
 

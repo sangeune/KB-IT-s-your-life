@@ -46,32 +46,32 @@ public class Main {
         int[] dr = {-1, 1, 0, 0};
         int[] dc = {0, 0, -1, 1};
 
-        //bfs
-        public static int bfs(map, int sr, int sc){
-            Queue<int[]> q = new LinkedList<>();
-            q.offer(new int[]{sr, sc, 0}); //행, 열, 거리
-            visited[sr][sc] = true;
-
-            while (!q.isEmpty()) {
-                int[] cur = q.remove(); //큐에서 꺼내기
-                int r = cur[0];
-                int c = cur[1];
-                int d = cur[2];
-
-                for (int k = 0; k < 4; k++) {
-                    int nr = c + dr[k];
-                    int nc = c + dc[k];
-
-                    if (nr >= 0 && nr < N && nc >= 0 && nc < N && map[nr][nc] == 0) {
-                        if (!visited[nr][nc]) {
-                            visited[nr][nc] = true;
-                            q.add(new int[]{nr, nc, d+1}); //큐에 추가
-                        }
-                    }
-                }
-                System.out.println(d);
-            }
-
-        }
+//        //bfs
+//        public static int bfs(map, int sr, int sc){
+//            Queue<int[]> q = new LinkedList<>();
+//            q.offer(new int[]{sr, sc, 0}); //행, 열, 거리
+//            visited[sr][sc] = true;
+//
+//            while (!q.isEmpty()) {
+//                int[] cur = q.remove(); //큐에서 꺼내기
+//                int r = cur[0];
+//                int c = cur[1];
+//                int d = cur[2];
+//
+//                for (int k = 0; k < 4; k++) {
+//                    int nr = c + dr[k];
+//                    int nc = c + dc[k];
+//
+//                    if (nr >= 0 && nr < N && nc >= 0 && nc < N && map[nr][nc] == 0) {
+//                        if (!visited[nr][nc]) {
+//                            visited[nr][nc] = true;
+//                            q.add(new int[]{nr, nc, d+1}); //큐에 추가
+//                        }
+//                    }
+//                }
+//                System.out.println(d);
+//            }
+//
+//        }
     }
 }
