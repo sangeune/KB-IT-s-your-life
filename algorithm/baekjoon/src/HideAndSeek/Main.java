@@ -3,7 +3,7 @@ package HideAndSeek;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
-import java.util.LinkedList;
+import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
@@ -18,13 +18,13 @@ public class Main {
         int K = Integer.parseInt(st.nextToken());
 
         int[] visited = new int[100001];
-        Queue<Integer> queue = new LinkedList<>();
+        Queue<Integer> q = new ArrayDeque<>();
 
-        queue.add(N);
+        q.offer(N);
         visited[N] = 1;
 
-        while (!queue.isEmpty()) {
-            int cur = queue.poll();
+        while (!q.isEmpty()) {
+            int cur = q.poll();
 
             if (cur == K) {
                 System.out.println(visited[cur]-1);
@@ -33,7 +33,7 @@ public class Main {
             for(int next : new int[]{cur-1, cur+1, cur*2}) {
                 if (next>=0 && next<=100000 && visited[next] == 0) {
                     visited[next] = visited[cur] + 1;
-                    queue.add(next);
+                    q.offer(next);
                 }
             }
         }

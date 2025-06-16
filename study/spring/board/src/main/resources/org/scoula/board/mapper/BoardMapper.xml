@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace에는 인터페이스 이름까지 넣어줌-->
+
+<!--insert 하고 나서 자동 증가한 no를 vo의 no변수에 자동으로 넣고 싶으면 selectKey 태그 추가-->
+<mapper namespace="org.scoula.board.mapper.BoardMapper">
+    <insert id="create">
+        insert into tbl_board(title, content, writer)
+        values (#{title}, #{content}, #{writer})
+
+        <selectKey resultType="Long" keyProperty="no" keyColumn="no" order="AFTER">
+
+            SELECT LAST_INSERT_ID()
+
+        </selectKey>
+    </insert>
+<!--    vo에 있는 해당 필드명과 동일한 것을 넣어주면 get항목명()이 호출됨.-->
+
+    <select id="getList"
+            resultType="org.scoula.board.domain.BoardVO">
+        select * from tbl_board order by no desc
+    </select>
+
+<!--    parameterType="long" 생략 가능. 입력값 1개, pk인 경우-->
+    <select id="get"
+            parameterType="long"
+            resultType="BoardVO">
+        select *
+        from tbl_board
+        where no = #{no}
+    </select>
+</mapper>
