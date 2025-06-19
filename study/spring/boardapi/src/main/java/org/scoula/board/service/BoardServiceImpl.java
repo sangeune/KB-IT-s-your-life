@@ -33,7 +33,7 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
-    public BoardDTO get(Long no) {
+    public BoardDTO get(Long no) { //15, 100
         log.info("get......" + no);
 
         BoardDTO board = BoardDTO.of(mapper.get(no));

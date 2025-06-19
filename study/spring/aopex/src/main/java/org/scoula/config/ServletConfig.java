@@ -14,30 +14,29 @@ import org.springframework.web.servlet.view.JstlView;
 
 @EnableWebMvc
 @ComponentScan(basePackages = {
-        "org.scoula.exception",
         "org.scoula.controller",
-        "org.scoula.board.controller",
-        "org.scoula.weather.controller"
-})
+        "org.scoula.exception"
+})	// Spring MVC용 컴포넌트 등록을 위한 스캔 패키지
 public class ServletConfig implements WebMvcConfigurer {
+
+    //	Servlet 3.0 파일 업로드 사용시
+
+    @Bean
+    public MultipartResolver multipartResolver() {
+        StandardServletMultipartResolver resolver = new StandardServletMultipartResolver();
+        return resolver;
+    }
+
+    //프론트파일(css, js, img)의 위치를 지정해주는 함수
+    // /resources/img/a.png라고 요청이 들어오면
+    // /resources/밑에서 찾겠다라는 설정
+    // <img src="/resources/img/a.png">
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry
                 .addResourceHandler("/resources/**")     // url이 /resources/로 시작하는 모든 경로
                 .addResourceLocations("/resources/");    // webapp/resources/경로로 매핑
-
-        // Swagger UI 리소스를 위한 핸들러설정
-        registry.addResourceHandler("/swagger-ui.html")
-                .addResourceLocations("classpath:/META-INF/resources/");
-        // Swagger WebJar 리소스 설정
-        registry.addResourceHandler("/webjars/**")
-                .addResourceLocations("classpath:/META-INF/resources/webjars/");
-        // Swagger 리소스 설정
-        registry.addResourceHandler("/swagger-resources/**")
-                .addResourceLocations("classpath:/META-INF/resources/");
-        registry.addResourceHandler("/v2/api-docs")
-                .addResourceLocations("classpath:/META-INF/resources/");
     }
 
     // jsp view resolver 설정
@@ -51,13 +50,5 @@ public class ServletConfig implements WebMvcConfigurer {
 
         registry.viewResolver(bean);
     }
-
-    //	Servlet 3.0 파일 업로드 사용시
-    @Bean
-    public MultipartResolver multipartResolver() {
-        StandardServletMultipartResolver resolver = new StandardServletMultipartResolver();
-        return resolver;
-    }
-
 
 }

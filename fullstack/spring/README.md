@@ -10,8 +10,8 @@
 | 04   | Spring 기본 게시판              |  ✅  |      |
 | 05   | Spring 기본 게시판, 파일 업로드 |  ✅  |      |
 | 06   | Rest                            |  ✅  |      |
-| 07   | OpenAPI                         |      |      |
-| 08   | Spring AOP                      |      |      |
+| 07   | OpenAPI                         |  ✅  |      |
+| 08   | Spring AOP                      |  ✅  |      |
 | 09   | Spring Security Form 인증       |      |      |
 | 10   | Spring Security JWT 인증        |      |      |
 | 11   | Spring Security JWT 인증2       |      |      |
