@@ -56,7 +56,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutUrl("/security/logout")
                 .invalidateHttpSession(true)
                 // 로그아웃설정시작
-// POST: 로그아웃 호출 url
+                // POST: 로그아웃 호출 url
                 // 세션 invalidate
                 .deleteCookies("remember-me", "JSESSION-ID") // 삭제할 쿠키 목록
                 .logoutSuccessUrl("/security/logout");
@@ -69,11 +69,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         log.info("configure .........................................");
         auth.inMemoryAuthentication()
                 .withUser("admin")
-                .password("{noop}1234")
+                // .password("{noop}1234")
+                .password("$2a$10$EsIMfxbJ6NuvwX7MDj4WqOYFzLU9U/lddCyn0nic5dFo3VfJYrXYC")
                 .roles("ADMIN", "MEMBER"); // ROLE_ADMIN
         auth.inMemoryAuthentication()
                 .withUser("member")
-                .password("{noop}1234")
+                //.password("{noop}1234")
+                .password("$2a$10$9RvLJCvVf2FiLn/w30mkduI8329Y8XN9wjfhBH7l5soIdEVVd4SxW")
                 .roles("MEMBER");  // ROLE_MEMBER
         // ROLE_MEMBER
     }

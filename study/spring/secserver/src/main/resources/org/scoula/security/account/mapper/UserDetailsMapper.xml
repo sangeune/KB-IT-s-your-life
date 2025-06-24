@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.scoula.security.account.mapper.UserDetailsMapper">
+
+    <!--    검색하는 sql문 태그로 넣자.!!! -->
+    <select id="get" resultType="MemberVO">
+        select *
+        from tbl_member
+        where username = #{username}
+        <!-- 조인해서 가지고 와야함. 1:n의 관계 -->
+    </select>
+</mapper>
