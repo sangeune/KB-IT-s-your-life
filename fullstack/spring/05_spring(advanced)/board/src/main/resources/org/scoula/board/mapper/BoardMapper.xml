@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace에는 인터페이스이름까지 넣어줌. -->
+<!-- 패키지경로와 인터페이스명은 슬랙에 복사하는 방법있음. -->
+<mapper namespace="org.scoula.board.mapper.BoardMapper">
+    <!-- insert는 대부분 입력값이 vo임. 생략가능 -->
+    <!-- insert, update, delete는 무조건 결과는 int임. 생략가능 -->
+    <!-- id는 인터페이스의 함수와 동일해야 함수를 호출했을 때, mapper의 sql문이 실행됨.-->
+    <!-- insert하고 나서 자동증가한
+        no를 vo의 no변수에 자동으로 넣고 싶으면 selectKey태그를 추가해주세요.-->
+    <insert id="create">
+        insert into tbl_board(title, content, writer)
+        values (#{title}, #{content}, #{writer})
+
+        <selectKey resultType="Long" keyProperty="no" keyColumn="no" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+    <insert id="createAttachment">
+        insert into tbl_board_attachment(filename, path, content_type, size, bno)
+        values(#{filename}, #{path}, #{contentType}, #{size}, #{bno})
+    </insert>
+
+    <select id="getList"
+            resultType="BoardVO">
+        select * from tbl_board order by no desc
+    </select>
+
+    <!-- vo에 있는 해당 필드명과 동일한 것을 넣어주면 get항목명()이 호출됨. -->
+    <!--    parameterType="long" 생략가능. 입력값 1개, ,pk인 경우 -->
+    <select id="get" resultMap="boardMap">
+        select b.*, a.no as ano, a.bno, a.filename, a.path,
+               a.content_type, a.size, a.reg_date as a_reg_date
+        from tbl_board b
+                 left outer join tbl_board_attachment a
+                                 on b.no = a.bno
+        where b.no = #{no}
+        order by filename
+    </select>
+
+    <select id="getAttachmentList" resultType="BoardAttachmentVO">
+        select * from tbl_board_attachment
+        where bno = #{bno}
+        order by filename
+    </select>
+
+    <select id="getAttachment" resultType="BoardAttachmentVO">
+        select * from tbl_board_attachment
+        where no = #{no}
+    </select>
+
+
+    <update id="update">
+        update tbl_board set
+                             title = #{title},
+                             content = #{content},
+                             writer = #{writer},
+                             update_date = now()
+        where no = #{no}
+    </update>
+
+    <delete id="delete">
+        delete from tbl_board where no = #{no}
+    </delete>
+
+    <delete id="deleteAttachment">
+        delete from tbl_board_attachment
+        where no = #{no}
+    </delete>
+
+    <resultMap id="attachmentMap" type="org.scoula.board.domain.BoardAttachmentVO">
+        <id column="ano" property="no"/>
+        <result column="bno" property="bno"/>
+        <result column="filename" property="filename"/>
+        <result column="path" property="path"/>
+        <result column="contentType" property="contentType"/>
+        <result column="size" property="size"/>
+        <result column="a_reg_date" property="regDate"/>
+    </resultMap>
+
+    <resultMap id="boardMap" type="org.scoula.board.domain.BoardVO">
+        <id column="no" property="no"/>
+        <result column="title" property="title"/>
+        <result column="content" property="content"/>
+        <result column="writer" property="writer"/>
+        <result column="reg_date" property="regDate"/>
+        <result column="update_date" property="updateDate"/>
+        <collection property="attaches" resultMap="attachmentMap"/>
+    </resultMap>
+</mapper>
