@@ -70,7 +70,7 @@ public class BoardServiceImpl implements BoardService {
             upload(boardVO.getNo(), files);
         }
 
-        return get(board.getNo());
+        return get(boardVO.getNo());
     }
 
     private void upload(Long bno, List<MultipartFile> files) {
