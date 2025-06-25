@@ -33,7 +33,7 @@ class JwtProcessorTest {
     @Test
     void validateToken() {
         // 5분경과후테스트
-        String token = "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyMCIsImlhdCI6MTc1MDgxMzE1MywiZXhwIjoxNzUwODEzNDUzfQ.U1hsF6NdX5Giav-Gq608fVN1RrM4BLhbcBKiZdxV4E9rkOuqpdOwnE1mbp3nJIDE";
+        String token = "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyMCIsImlhdCI6MTc1MDgxMzQ3OCwiZXhwIjoxNzUwODEzNTk4fQ.N6Z5uO-czbD1XhyNMi9r0dwLrAowfAaydmGHDOPThcUYkjB-RduuevnbPfqs-A1C";
 
         boolean isValid = jwtProcessor.validateToken(token); // 5분경과후면예외발생
         log.info(isValid);
