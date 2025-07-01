@@ -20,6 +20,27 @@ a,
   padding: 3px;
 }
 
+.avatar {
+  border-radius: 50%;
+  border-color: gray;
+  background-color: #d8d8d8;
+}
+
+.avatar-sm {
+  width: 20px;
+  height: 20px;
+}
+
+.avatar-md {
+  width: 40px;
+  height: 40px;
+}
+
+.avatar-lg {
+  width: 80px;
+  height: 80px;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);

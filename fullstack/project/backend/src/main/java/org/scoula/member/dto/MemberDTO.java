@@ -24,6 +24,7 @@ public class MemberDTO {
 
     private List<String> authList; // 권한 목록, join 처리 필요
 
+    //VO -> DTO
     public static MemberDTO of(MemberVO m) {
         return MemberDTO.builder()
                 .username(m.getUsername())
@@ -34,6 +35,7 @@ public class MemberDTO {
                 .build();
     }
 
+    //DTO -> VO
     public MemberVO toVO() {
         return MemberVO.builder()
                 .username(username)
