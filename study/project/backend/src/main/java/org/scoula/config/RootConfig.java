@@ -19,8 +19,8 @@ import javax.sql.DataSource;
 
 @Configuration
 @PropertySource({"classpath:/application.properties"})
-@MapperScan(basePackages = {"org.scoula.board.mapper"})
-@ComponentScan(basePackages = {"org.scoula.board.service"})
+@MapperScan(basePackages = {"org.scoula.board.mapper", "org.scoula.member.mapper"})
+@ComponentScan(basePackages = {"org.scoula.board.service", "org.scoula.member.service"})
 @EnableTransactionManagement
 public class RootConfig {
     @Value("${jdbc.driver}")
