@@ -6,6 +6,9 @@ import LogoutMenuItem from "./LogoutMenuItem.vue";
 import config from "@/config";
 
 const { login, join } = config.accoutMenus;
+import { useAuthStore } from "@/stores/auth.js";
+
+const auth = useAuthStore();
 
 // 로그인 상태 (임시: false)
 const islogin = computed(() => auth.isLogin);
