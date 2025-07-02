@@ -29,6 +29,7 @@ export default {
     return data;
   },
 
+  // 정보 수정
   async update(member) {
     const formData = new FormData();
     formData.append("username", member.username);
@@ -41,6 +42,16 @@ export default {
       `${BASE_URL}/${member.username}`,
       formData,
       headers
+    );
+    console.log("AUTH PUT: ", data);
+    return data;
+  },
+
+  // 비밀번호 변경
+  async changePassword(formData) {
+    const { data } = await api.put(
+      `${BASE_URL}/${formData.username}/changepassword`,
+      formData
     );
     console.log("AUTH PUT: ", data);
     return data;
