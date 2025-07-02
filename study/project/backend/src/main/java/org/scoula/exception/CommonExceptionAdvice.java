@@ -27,5 +27,4 @@ public class CommonExceptionAdvice {
         log.error(ex);
         return "/resources/index.html";
     }
-
 }

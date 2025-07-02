@@ -1,6 +1,6 @@
 import { ref, computed, reactive } from 'vue';
 import { defineStore } from 'pinia';
-import axios from 'axios';
+import axios from '@/api';
 
 const initState = {
   token: '', // 접근 토큰(JWT)
@@ -21,11 +21,11 @@ export const useAuthStore = defineStore('auth', () => {
   const email = computed(() => state.value.user.email); // 로그인 사용자 email
 
   const login = async (member) => {
-    state.value.token = 'test token';
-    state.value.user = {
-      username: member.username,
-      email: member.username + '@test.com',
-    };
+    // state.value.token = 'test token';
+    // state.value.user = {
+    //   username: member.username,
+    //   email: member.username + '@test.com',
+    // };
 
     // api 호출
     const { data } = await axios.post('/api/auth/login', member);
@@ -53,5 +53,19 @@ export const useAuthStore = defineStore('auth', () => {
 
   load();
 
-  return { state, username, email, isLogin, login, logout, getToken };
+  const changeProfile = (member) => {
+    state.value.user.email = member.email;
+    localStorage.setItem('auth', JSON.stringify(state.value));
+  };
+
+  return {
+    state,
+    username,
+    email,
+    isLogin,
+    changeProfile,
+    login,
+    logout,
+    getToken,
+  };
 });

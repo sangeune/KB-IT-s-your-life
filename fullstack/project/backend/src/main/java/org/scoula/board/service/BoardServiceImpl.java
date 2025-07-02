@@ -37,6 +37,8 @@ public class BoardServiceImpl implements BoardService {
         log.info("get......" + no);
 
         BoardDTO board = BoardDTO.of(mapper.get(no));
+
+        log.info("========================" + board);
         return Optional
                 .ofNullable(board)
                 .orElseThrow(NoSuchElementException::new);
@@ -90,7 +92,16 @@ public class BoardServiceImpl implements BoardService {
     @Override
     public BoardDTO update(BoardDTO board) {
         log.info("update......" + board);
+        BoardVO boardVO = board.toVo();
+        log.info("update...... " + boardVO);
+
         mapper.update(board.toVo());
+
+        // 파일 업로드 처리
+        List<MultipartFile> files = board.getFiles();
+        if(files != null && !files.isEmpty()) {
+            upload(board.getNo(), files);
+        }
 
         return get(board.getNo());
     }
@@ -104,7 +115,7 @@ public class BoardServiceImpl implements BoardService {
         return board;
     }
 
-        // 첨부파일 한 개 얻기
+    // 첨부파일 한 개 얻기
     @Override
     public BoardAttachmentVO getAttachment(Long no) {
         return mapper.getAttachment(no);

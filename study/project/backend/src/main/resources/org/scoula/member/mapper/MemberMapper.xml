@@ -19,6 +19,21 @@
         <collection property="authList" resultMap="authMap"/>
     </resultMap>
 
+    <update id="update">
+        UPDATE tbl_member
+        SET email       = #{email},
+            update_date = now()
+        WHERE username = #{username}
+    </update>
+
+    <update id="updatePassword">
+        UPDATE tbl_member
+        SET password    = #{newPassword},
+            update_date = now()
+        WHERE username = #{username}
+    </update>
+
+
     <select id="get" resultMap="memberMap">
         SELECT m.username, password, email, reg_date, update_date, auth
         FROM tbl_member m

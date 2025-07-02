@@ -2,8 +2,11 @@ package org.scoula.member.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.scoula.member.dto.ChangePasswordDTO;
 import org.scoula.member.dto.MemberDTO;
 import org.scoula.member.dto.MemberJoinDTO;
+import org.scoula.member.dto.MemberUpdateDTO;
+import org.scoula.member.exception.PasswordMissmatchException;
 import org.scoula.member.mapper.MemberMapper;
 import org.scoula.security.account.domain.AuthVO;
 import org.scoula.security.account.domain.MemberVO;
@@ -67,6 +70,54 @@ public class MemberServiceImpl implements MemberService {
         return get(member.getUsername());
     }
 
+    @Override
+    public MemberDTO update(MemberUpdateDTO member) {
+        //1. 패스워드가 맞지 않으면 update처리하지 않음.
+        //내가 입력한 pw는 member에 들어있고.
+        //db에 pw를 검색해서 가지고 와서 가지고 와야함.
+        MemberVO vo = mapper.get(member.getUsername());
+        if (!passwordEncoder.matches(member.getPassword(), vo.getPassword())) {
+            throw new PasswordMissmatchException();
+        }
+        //2. mybatis에 update()처리 요청
+        mapper.update(member.toVO());
+
+        //3. 아바타 저장
+        saveAvatar(member.getAvatar(), member.getUsername());
+
+        //4. 리턴은 검색해서 리턴
+        return get(member.getUsername());
+    }
+
+
+    @Override
+    public void changePassword(ChangePasswordDTO changePassword) {
+        MemberVO member = mapper.get(changePassword.getUsername());
+
+        if (!passwordEncoder.matches(changePassword.getOldPassword(), member.getPassword())) {
+            throw new PasswordMissmatchException();
+        }
+
+        changePassword.setNewPassword(passwordEncoder.encode(changePassword.getNewPassword()));
+
+        mapper.updatePassword(changePassword);
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

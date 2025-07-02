@@ -1,4 +1,6 @@
 import axios from "axios";
+import { useAuthStore } from "@/stores/auth";
+import router from "@/router";
 
 const instance = axios.create({
   timeout: 1000,

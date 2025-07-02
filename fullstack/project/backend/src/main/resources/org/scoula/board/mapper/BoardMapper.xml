@@ -89,6 +89,5 @@
 	<delete id="deleteAttachment">
 		delete from tbl_board_attachment
 		where no = #{no}
-
 	</delete>
 </mapper>

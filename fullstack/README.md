@@ -13,3 +13,5 @@
 📡 [**06 Servlet, JSP, JSTL 기반 서버 프로그래밍**](./jsp) — 기본 ✅ / 심화 ⬜
 
 🌱 [**07 Spring Framework를 활용한 애플리케이션 개발**](./spring) — 기본 ✅ / 심화 ⬜
+
+🔗 [**08 Spring - Vue 연동**](./project) — 기본 ⬜ / 심화 ⬜

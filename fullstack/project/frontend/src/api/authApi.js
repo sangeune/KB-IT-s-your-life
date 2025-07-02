@@ -1,4 +1,5 @@
-import api from "axios";
+// import api from 'axios';
+import api from '@/api'; //index.js가 import
 
 const BASE_URL = "/api/member";
 const headers = { "Content-Type": "multipart/form-data" };
